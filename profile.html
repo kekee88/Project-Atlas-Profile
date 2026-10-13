@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Profile</title>
+
+    <!-- Stylish Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 16px;
+            color: #f8f7ff;
+            background:
+                radial-gradient(circle at 15% 15%, #572b91 0, transparent 35%),
+                radial-gradient(circle at 90% 85%, #123f60 0, transparent 35%),
+                #0b1020;
+        }
+
+        .profile-card {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 440px;
+            padding: 42px 34px;
+            text-align: center;
+            border: 1px solid #ffffff24;
+            border-radius: 28px;
+            background: linear-gradient(
+                145deg,
+                #1c2040eF,
+                #11172aeF
+            );
+            box-shadow: 0 25px 70px #00000060;
+        }
+
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            top: -120px;
+            right: -80px;
+            border-radius: 50%;
+            background: #b44aff;
+            filter: blur(90px);
+            opacity: 0.5;
+        }
+
+        .avatar {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+            background: linear-gradient(135deg, #a855f7, #fb7185, #38bdf8);
+            box-shadow: 0 0 35px #a855f755;
+            border: 3px solid #ffffff40;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 7px 13px;
+            margin-bottom: 18px;
+            border: 1px solid #c084fc55;
+            border-radius: 30px;
+            color: #e0b7ff;
+            background: #a855f718;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(30px, 7vw, 39px);
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #c084fc, #fb7185, #67e8f9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .role {
+            color: #b9c0dc;
+            font-size: 15px;
+            margin-bottom: 22px;
+        }
+
+        .intro {
+            color: #d2d6e8;
+            font-size: 14px;
+            line-height: 1.9;
+            margin-bottom: 27px;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .skill {
+            padding: 9px 15px;
+            border: 1px solid #ffffff20;
+            border-radius: 12px;
+            background: #ffffff0b;
+            color: #e8e9fa;
+            font-size: 13px;
+            transition: 0.25s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-4px);
+            border-color: #c084fc;
+            background: #a855f725;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 13px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            background: linear-gradient(100deg, #9333ea, #db2777);
+            box-shadow: 0 8px 25px #a855f740;
+            transition: 0.25s ease;
+        }
+
+        .portfolio-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px #db277755;
+        }
+
+        .footer {
+            margin-top: 28px;
+            color: #858eac;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 400px) {
+            .profile-card {
+                padding: 34px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="profile-card">
+
+            <div class="avatar" role="img" aria-label="Profile initials ST">ST</div>
+            
+            <p class="tag">Hello, World! ✦</p>
+
+            <h1>I'm <span class="gradient-text">Sai Keerthana T V</span></h1>
+
+            <p class="role">First-Year Engineering Student · Aspiring Developer</p>
+
+            <p class="intro">
+                I'm a curious learner exploring the world of technology.
+                I love discovering new things, solving problems, and
+                turning creative ideas into reality through code.
+            </p>
+
+            <h2 class="section-title">✦ My Skills</h2>
+
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">C Programming</span>
+            </div>
+
+            <a
+                class="portfolio-link"
+                href="https://github.com/YOUR-USERNAME"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my GitHub profile"
+            >
+                Explore My GitHub ↗
+            </a>
+
+            <p class="footer">DESIGNED WITH CURIOSITY & CODE ✨</p>
+
+        </section>
+    </main>
+</body>
+</html>
